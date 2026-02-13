@@ -13,7 +13,7 @@ const CONFIG = {
     acceptedMessage:
       "Okay now you’re officially my Valentine. Screenshot this and send it to me 😚",
     targetDateLocal: "2026-02-14T00:00:00", // local time; set to your timezone device
-    photoUrl: "../valentine/img/panda.webp", // e.g. "./img/us.jpg" (put file in img folder)
+    photoUrl: "./img/panda.webp", // e.g. "./img/us.jpg" (put file in img folder)
     music: {
       enabled: true,
       // A tiny built-in tone loop (no external files). Toggle via button.
