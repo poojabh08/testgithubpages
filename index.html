@@ -1,0 +1,92 @@
+<!-- /index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine? 💘</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="theme-color" content="#ff5fa2" />
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" aria-label="Valentine card">
+        <header class="top">
+          <div class="badge" aria-hidden="true">💌</div>
+          <div>
+            <h1 id="title">Hey <span class="accent" id="bfName">Love</span>…</h1>
+            <p class="subtitle" id="subtitle">I made this tiny website just for you.</p>
+          </div>
+          <button id="musicBtn" class="icon-btn" type="button" aria-label="Toggle music" title="Toggle music">
+            🔊
+          </button>
+        </header>
+
+        <div class="hero">
+          <div class="photo" role="img" aria-label="A cute photo">
+            <img id="photo" alt="Our photo" />
+            <div class="photo-fallback" id="photoFallback">
+              <div class="heart">❤</div>
+              <div class="small">Add a photo in <code>app.js</code></div>
+            </div>
+          </div>
+
+          <div class="content">
+            <p class="message" id="message">
+              You’re my favorite person. Will you be my Valentine?
+            </p>
+
+            <div class="countdown">
+              <div class="pill">
+                <span class="dot" aria-hidden="true"></span>
+                <span id="countdownText">Loading countdown…</span>
+              </div>
+            </div>
+
+            <div class="actions" id="actions">
+              <button id="yesBtn" class="btn btn-primary" type="button">
+                Yes 💘
+              </button>
+              <button id="noBtn" class="btn btn-ghost" type="button">
+                Not yet 🙈
+              </button>
+            </div>
+
+            <p class="tiny" id="tinyHint">Psst: try clicking “Not yet” 😇</p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="sig">
+            <span>Made with</span> <span class="pulse" aria-hidden="true">❤</span> <span>by</span>
+            <span class="accent" id="fromName">Me</span>
+          </div>
+          <div class="mini-links">
+            <button id="copyBtn" class="linkish" type="button">Copy link</button>
+            <span class="sep" aria-hidden="true">•</span>
+            <button id="resetBtn" class="linkish" type="button">Reset</button>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <div class="floating" aria-hidden="true"></div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">YAYYYYY 💞</h2>
+        <p id="modalText">
+          Okay now you’re officially my Valentine. Screenshot this and send it to me 😚
+        </p>
+        <div class="modal-actions">
+          <button id="modalClose" class="btn btn-primary" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
